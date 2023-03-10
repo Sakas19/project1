@@ -66,7 +66,7 @@ function App() {
             });
           }}
         >
-          Next!
+         Switch Article!
         </button>
       </div>
     </>

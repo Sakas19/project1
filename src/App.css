@@ -1,65 +1,86 @@
 :root {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .article {
-max-width: 600px;
+    max-width: 600px;
 }
 
 body {
-  background-color: lavender;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  height: 100%;
-  line-height: 1.6;
-  margin: 0;
+    background-color: lavender;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    height: 100%;
+    line-height: 1.6;
+    margin: 0;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .app {
-  color: floralwhite;
-  margin: 0 56px;
+    color: floralwhite;
+    margin: 0 56px;
 }
 
 h1,
 h2 {
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 a:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 article {
-  background-color: aliceblue;
-  margin:80px auto;
-  max-width: 600px;
-  padding: 56px;
+    background-color: aliceblue;
+    margin: 80px auto;
+    max-width: 600px;
+    padding: 56px;
 }
 
-article > p {
-  margin: 12px auto;
-  max-width: 50ch;
+article>p {
+    margin: 12px auto;
+    max-width: 50ch;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-  justify-content: center;
-  margin: 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: center;
+    margin: 36px;
 }
 
 button {
-  background-color: white;
-  border-style: none;
-  cursor: pointer;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  padding: 24px;
-  transition: all 0.3s;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    padding: 24px;
+    transition: all 0.3s;
+}
+
+active.show-article {
+    display: block;
+}
+
+.active.hide-article {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .article {
+        max-width: 600px;
+        margin: 80px 0;
+    }
 }
